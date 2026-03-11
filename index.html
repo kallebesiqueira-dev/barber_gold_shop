@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gold Barber Shop a Giubiasco: esperienza premium, tagli moderni, barba, prenotazioni rapide via WhatsApp."
+    />
+    <title>Gold Barber Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell"></div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" data-i18n-aria-label="brandHomeAria" aria-label="Gold Barber Shop home">
+          <span class="brand-logo-wrap">
+            <img class="brand-logo" src="imgs/logo.jpg" alt="Gold Barber Shop logo" />
+          </span>
+          <span class="brand-text">
+            <span class="brand-line">
+              <strong data-i18n="brandName">Gold Barber</strong>
+              <span class="brand-accent" data-i18n="brandAccent">Shop</span>
+            </span>
+            <small data-i18n="brandTagline">Giubiasco, Svizzera</small>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <nav class="site-nav" data-i18n-aria-label="navAria" aria-label="Main navigation">
+            <button
+              class="nav-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              data-i18n-aria-label="menuToggleAria"
+              aria-label="Apri menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="nav-panel" id="nav-menu">
+              <a href="#home" data-i18n="navHome">Home</a>
+              <a href="#about" data-i18n="navAbout">Chi siamo</a>
+              <a href="#pricing" data-i18n="navPricing">Listino prezzi</a>
+              <a href="#gallery" data-i18n="navGallery">Galleria</a>
+              <a href="#booking" data-i18n="navBooking">Prenotazioni</a>
+              <a href="#contact" data-i18n="navContact">Contatti</a>
+            </div>
+          </nav>
+
+          <div class="language-switcher" data-i18n-aria-label="languageSwitcherAria" aria-label="Language switcher">
+            <button
+              class="lang-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="language-menu"
+              data-i18n-aria-label="languageTriggerAria"
+              aria-label="Seleziona lingua"
+            >
+              <span class="flag-icon active-flag" aria-hidden="true" data-active-flag="it">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                  <defs>
+                    <clipPath id="flag-it-trigger-clip">
+                      <rect x="2" y="3" width="20" height="18" rx="9" ry="9"></rect>
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#flag-it-trigger-clip)">
+                    <rect x="2" y="3" width="6.67" height="18" fill="#009246"></rect>
+                    <rect x="8.67" y="3" width="6.66" height="18" fill="#f7f7f7"></rect>
+                    <rect x="15.33" y="3" width="6.67" height="18" fill="#ce2b37"></rect>
+                  </g>
+                </svg>
+              </span>
+              <span class="flag-icon active-flag is-hidden" aria-hidden="true" data-active-flag="en">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                  <defs>
+                    <clipPath id="flag-gb-trigger-clip">
+                      <rect x="2" y="3" width="20" height="18" rx="9" ry="9"></rect>
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#flag-gb-trigger-clip)">
+                    <rect x="2" y="3" width="20" height="18" fill="#012169"></rect>
+                    <path d="M2 5.2 7.1 3h2.38L2 8.53V5.2Zm20 0L16.9 3h-2.38L22 8.53V5.2ZM2 18.8 7.1 21h2.38L2 15.47v3.33ZM22 18.8 16.9 21h-2.38L22 15.47v3.33Z" fill="#fff"></path>
+                    <path d="M22 3v1.15L14.94 9.3h-1.88L22 3Zm-20 0 7.06 6.3H7.18L2 4.15V3Zm20 18-7.06-6.3h1.88L22 19.85V21Zm-20 0v-1.15l7.06-6.15h1.88L2 21Z" fill="#C8102E"></path>
+                    <rect x="10.1" y="3" width="3.8" height="18" fill="#fff"></rect>
+                    <rect x="2" y="10.1" width="20" height="3.8" fill="#fff"></rect>
+                    <rect x="10.85" y="3" width="2.3" height="18" fill="#C8102E"></rect>
+                    <rect x="2" y="10.85" width="20" height="2.3" fill="#C8102E"></rect>
+                  </g>
+                </svg>
+              </span>
+              <span class="lang-code active-lang-code">IT</span>
+              <span class="lang-arrow" aria-hidden="true">
+                <svg viewBox="0 0 20 20" role="presentation" focusable="false">
+                  <path d="M5.25 7.5 10 12.25 14.75 7.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+                </svg>
+              </span>
+            </button>
+
+            <div class="language-menu" id="language-menu" role="menu">
+              <button class="lang-option is-active" type="button" data-lang="it" aria-checked="true" role="menuitemradio">
+                <span class="flag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                    <defs>
+                      <clipPath id="flag-it-menu-clip">
+                        <rect x="2" y="3" width="20" height="18" rx="9" ry="9"></rect>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#flag-it-menu-clip)">
+                      <rect x="2" y="3" width="6.67" height="18" fill="#009246"></rect>
+                      <rect x="8.67" y="3" width="6.66" height="18" fill="#f7f7f7"></rect>
+                      <rect x="15.33" y="3" width="6.67" height="18" fill="#ce2b37"></rect>
+                    </g>
+                  </svg>
+                </span>
+                <span data-lang-label="it">Italiano</span>
+              </button>
+
+              <button class="lang-option" type="button" data-lang="en" aria-checked="false" role="menuitemradio">
+                <span class="flag-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+                    <defs>
+                      <clipPath id="flag-gb-menu-clip">
+                        <rect x="2" y="3" width="20" height="18" rx="9" ry="9"></rect>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#flag-gb-menu-clip)">
+                      <rect x="2" y="3" width="20" height="18" fill="#012169"></rect>
+                      <path d="M2 5.2 7.1 3h2.38L2 8.53V5.2Zm20 0L16.9 3h-2.38L22 8.53V5.2ZM2 18.8 7.1 21h2.38L2 15.47v3.33ZM22 18.8 16.9 21h-2.38L22 15.47v3.33Z" fill="#fff"></path>
+                      <path d="M22 3v1.15L14.94 9.3h-1.88L22 3Zm-20 0 7.06 6.3H7.18L2 4.15V3Zm20 18-7.06-6.3h1.88L22 19.85V21Zm-20 0v-1.15l7.06-6.15h1.88L2 21Z" fill="#C8102E"></path>
+                      <rect x="10.1" y="3" width="3.8" height="18" fill="#fff"></rect>
+                      <rect x="2" y="10.1" width="20" height="3.8" fill="#fff"></rect>
+                      <rect x="10.85" y="3" width="2.3" height="18" fill="#C8102E"></rect>
+                      <rect x="2" y="10.85" width="20" height="2.3" fill="#C8102E"></rect>
+                    </g>
+                  </svg>
+                </span>
+                <span data-lang-label="en">English</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <canvas class="hero-canvas" id="hero-canvas"></canvas>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content reveal">
+          <div class="hero-floating-actions">
+            <a class="btn btn-primary hero-float hero-float-primary" href="#booking" data-i18n="heroPrimaryCta">Prenota ora</a>
+            <a class="btn btn-secondary hero-float hero-float-secondary" href="#pricing" data-i18n="heroSecondaryCta">Scopri i servizi</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container split-layout">
+          <div class="about-media reveal">
+            <div class="image-frame">
+              <img src="imgs/linor.jpg" data-i18n-alt="aboutImageAlt" alt="Linor Rashiti, fondatore di Gold Barber Shop" />
+            </div>
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="section-label" data-i18n="aboutLabel">Chi siamo</p>
+            <h2 data-i18n="aboutTitle">Passione, precisione e un ambiente accogliente</h2>
+            <p data-i18n="aboutText1">
+              Piacere, mi chiamo Linor Rashiti. Gold Barber Shop ha aperto le sue porte il 15.01.2026 con l'obiettivo di offrire un servizio curato, professionale e vicino alle persone.
+            </p>
+            <p data-i18n="aboutText2">
+              Da alcuni anni coltivo con entusiasmo la passione per il mondo della barberia. Amo il contatto con i clienti, le conversazioni autentiche e la creazione di un'atmosfera piacevole, rilassata e di fiducia.
+            </p>
+            <p data-i18n="aboutText3">
+              Questo lavoro mi permette di stare ogni giorno a contatto con la gente, ed è proprio questo che mi motiva di più. Con impegno, passione e dedizione ho scelto di aprire il mio salone per creare uno spazio in cui ogni cliente possa sentirsi a proprio agio e uscire con un look curato, moderno e professionale.
+            </p>
+            <div class="about-highlights">
+              <div>
+                <strong>2026</strong>
+                <span data-i18n="aboutCard1">Apertura ufficiale</span>
+              </div>
+              <div>
+                <strong data-i18n="aboutCard2Value">100%</strong>
+                <span data-i18n="aboutCard2">Attenzione ai dettagli</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container gallery-shell reveal">
+          <div class="section-heading compact">
+            <p class="section-label" data-i18n="galleryLabel">Galleria</p>
+            <h2 data-i18n="galleryTitle">Tagli moderni, puliti e sempre su misura</h2>
+          </div>
+
+          <div class="carousel" data-carousel>
+            <button class="carousel-control prev" type="button" data-i18n-aria-label="carouselPrevAria" aria-label="Previous slide" data-carousel-prev>
+              <span>&larr;</span>
+            </button>
+
+            <div class="carousel-viewport" data-carousel-viewport>
+              <div class="carousel-track" data-carousel-track>
+                <article class="carousel-slide is-active">
+                  <img src="imgs/taglio0.png" data-i18n-alt="galleryAlt1" alt="Taglio uomo moderno 1" />
+                </article>
+                <article class="carousel-slide">
+                  <img src="imgs/taglio1.JPG" data-i18n-alt="galleryAlt2" alt="Taglio uomo moderno 2" />
+                </article>
+                <article class="carousel-slide">
+                  <img src="imgs/taglio2.JPG" data-i18n-alt="galleryAlt3" alt="Taglio uomo moderno 3" />
+                </article>
+                <article class="carousel-slide">
+                  <img src="imgs/taglio3.JPG" data-i18n-alt="galleryAlt4" alt="Taglio uomo moderno 4" />
+                </article>
+                <article class="carousel-slide">
+                  <img src="imgs/taglio4.jpeg" data-i18n-alt="galleryAlt5" alt="Taglio uomo moderno 5" />
+                </article>
+                <article class="carousel-slide">
+                  <img src="imgs/taglio5.jpeg" data-i18n-alt="galleryAlt6" alt="Taglio uomo moderno 6" />
+                </article>
+              </div>
+            </div>
+
+            <button class="carousel-control next" type="button" data-i18n-aria-label="carouselNextAria" aria-label="Next slide" data-carousel-next>
+              <span>&rarr;</span>
+            </button>
+          </div>
+
+          <div class="carousel-dots" data-carousel-dots></div>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="pricing">
+        <div class="container pricing-list-shell reveal">
+          <h2 class="pricing-list-title" data-i18n="pricingLabel">Listino prezzi</h2>
+
+          <div class="pricing-list" role="list">
+            <article class="pricing-row" role="listitem">
+              <div class="pricing-service">
+                <span data-i18n="serviceHaircut">Taglio Uomo</span>
+              </div>
+              <strong class="pricing-value">20 CHF</strong>
+            </article>
+
+            <article class="pricing-row" role="listitem">
+              <div class="pricing-service">
+                <span data-i18n="serviceKids">Taglio bambino</span>
+                <small data-i18n="serviceKidsNote">fino a 10 anni</small>
+              </div>
+              <strong class="pricing-value">10 CHF</strong>
+            </article>
+
+            <article class="pricing-row" role="listitem">
+              <div class="pricing-service">
+                <span data-i18n="serviceBeard">Barba</span>
+              </div>
+              <strong class="pricing-value">10 CHF</strong>
+            </article>
+
+            <article class="pricing-row" role="listitem">
+              <div class="pricing-service">
+                <span data-i18n="serviceWash">Lavaggio capelli</span>
+              </div>
+              <strong class="pricing-value">7 CHF</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="contact">
+        <div class="container location-grid">
+          <div class="location-media reveal">
+            <p class="section-label" data-i18n="locationLabel">Contatti</p>
+            <h2 data-i18n="locationTitle">Vieni a trovarci nel cuore di Giubiasco</h2>
+            <div class="image-frame large">
+              <img src="imgs/salone_fuori.JPG" data-i18n-alt="salonExteriorAlt" alt="Esterno del salone Gold Barber Shop" />
+            </div>
+          </div>
+
+          <div class="location-content reveal">
+            <div class="location-details">
+              <div class="detail-card">
+                <h3 data-i18n="hoursTitle">Orari di apertura</h3>
+                <p data-i18n="hoursDays">Martedì - Sabato</p>
+                <p><span data-i18n="morningLabel">Mattina</span>: 8:00 - 12:00</p>
+                <p><span data-i18n="afternoonLabel">Pomeriggio</span>: 13:30 - 19:00</p>
+              </div>
+
+              <div class="detail-card">
+                <h3 data-i18n="addressTitle">Indirizzo</h3>
+                <p>Via Piazza Grande 13</p>
+                <p>6512 Giubiasco</p>
+                <p data-i18n="countryName">Switzerland</p>
+              </div>
+            </div>
+
+            <div class="map-card">
+              <iframe
+                data-i18n-title="mapTitle"
+                title="Gold Barber Shop map"
+                src="https://www.google.com/maps?q=Via%20Piazza%20Grande%2013%2C%20Giubiasco%206512%2C%20Switzerland&z=15&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-label" data-i18n="reviewsLabel">Recensioni</p>
+            <h2 data-i18n="reviewsTitle">Feedback recenti dei nostri clienti</h2>
+          </div>
+
+          <div class="reviews-grid reveal">
+            <article class="review-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p data-i18n="review1Text">Servizio eccellente, ambiente molto professionale. Tornerò sicuramente.</p>
+              <strong data-i18n="review1Author">Marco R., 2 settimane fa</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p data-i18n="review2Text">Taglio preciso e attenzione ai dettagli. Locale pulito e accogliente.</p>
+              <strong data-i18n="review2Author">Luca M., 3 settimane fa</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p data-i18n="review3Text">Mi sono trovato molto bene, ottimo risultato e atmosfera rilassata.</p>
+              <strong data-i18n="review3Author">Samuele T., 1 settimana fa</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p data-i18n="review4Text">Finalmente un barbiere che capisce esattamente lo stile che volevo.</p>
+              <strong data-i18n="review4Author">Nicolò P., 6 giorni fa</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p data-i18n="review5Text">Esperienza top anche per mio figlio, rapido, gentile e molto bravo.</p>
+              <strong data-i18n="review5Author">Andrea F., 4 settimane fa</strong>
+            </article>
+            <article class="review-card">
+              <div class="stars" aria-label="5 star review">★★★★★</div>
+              <p data-i18n="review6Text">Barba sistemata perfettamente, consigliato a chi cerca qualità vera.</p>
+              <strong data-i18n="review6Author">Dennis C., 5 giorni fa</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking-section" id="booking">
+        <div class="container booking-grid">
+          <div class="booking-copy reveal">
+            <p class="section-label" data-i18n="bookingLabel">Prenotazioni</p>
+            <h2 data-i18n="bookingTitle">Prenota il tuo appuntamento in pochi secondi</h2>
+            <p data-i18n="bookingText">
+              Compila il modulo e invia direttamente la richiesta su WhatsApp con tutti i dettagli del servizio desiderato.
+            </p>
+          </div>
+
+          <form class="booking-form reveal" id="booking-form">
+            <div class="field-group">
+              <label for="booking-name" data-i18n="fieldNameLabel">Nome e cognome</label>
+              <input
+                id="booking-name"
+                name="name"
+                type="text"
+                required
+                data-i18n-placeholder="fieldNamePlaceholder"
+                placeholder="Il tuo nome"
+              />
+            </div>
+
+            <div class="field-grid">
+              <div class="field-group">
+                <label for="booking-date" data-i18n="fieldDateLabel">Data</label>
+                <input id="booking-date" name="date" type="date" required />
+              </div>
+
+              <div class="field-group">
+                <label for="booking-time" data-i18n="fieldTimeLabel">Orario</label>
+                <input id="booking-time" name="time" type="time" required min="08:00" max="19:00" step="1800" />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="booking-service" data-i18n="fieldServiceLabel">Servizio</label>
+              <select id="booking-service" name="service" required>
+                <option value="" data-i18n="fieldServicePlaceholder">Seleziona un servizio</option>
+                <option value="Taglio Uomo" data-i18n="serviceHaircut">Taglio Uomo</option>
+                <option value="Taglio bambino" data-i18n="serviceKids">Taglio bambino</option>
+                <option value="Barba" data-i18n="serviceBeard">Barba</option>
+                <option value="Lavaggio capelli" data-i18n="serviceWash">Lavaggio capelli</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary btn-full" type="submit" data-i18n="bookingSubmit">
+              Invia su WhatsApp
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-logo-wrap footer-logo-wrap">
+              <img class="brand-logo" src="imgs/logo.jpg" alt="Gold Barber Shop logo" />
+            </span>
+            <span class="brand-text">
+              <span class="brand-line">
+                <strong data-i18n="brandName">Gold Barber</strong>
+                <span class="brand-accent" data-i18n="brandAccent">Shop</span>
+              </span>
+              <small data-i18n="footerTagline">Stile, precisione, carattere</small>
+            </span>
+          </a>
+          <p class="footer-description" data-i18n="footerDescription">
+            Un barbershop moderno con un'accoglienza autentica, pensato per chi desidera qualità, ordine e un look curato.
+          </p>
+        </div>
+
+        <div>
+          <h3 data-i18n="footerAddressTitle">Indirizzo</h3>
+          <p>Via Piazza Grande 13</p>
+          <p>6512 Giubiasco</p>
+          <p data-i18n="countryName">Switzerland</p>
+        </div>
+
+        <div>
+          <h3 data-i18n="footerHoursTitle">Orari</h3>
+          <p data-i18n="hoursDays">Martedì - Sabato</p>
+          <p><span data-i18n="morningLabel">Mattina</span>: 8:00 - 12:00</p>
+          <p><span data-i18n="afternoonLabel">Pomeriggio</span>: 13:30 - 19:00</p>
+        </div>
+
+        <div>
+          <h3 data-i18n="footerSocialTitle">Social</h3>
+          <div class="social-links">
+            <a href="https://instagram.com/gold.barbershop12" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4Zm9.75 1.5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@gold.barbershop12" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14.63 2c.2 1.68 1.15 3.23 2.58 4.19.95.64 2.09.98 3.24.98V10.2a8.35 8.35 0 0 1-2.73-.46v6.03c0 3.8-3.08 6.88-6.88 6.88a6.88 6.88 0 0 1-6.24-9.78 6.88 6.88 0 0 1 5.66-3.96v3.15a3.77 3.77 0 0 0-2.23 1.12 3.77 3.77 0 0 0 2.81 6.39 3.77 3.77 0 0 0 3.77-3.77V2h3.02Z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/41763931583" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19.05 4.94A9.9 9.9 0 0 0 12.02 2C6.55 2 2.1 6.45 2.1 11.92c0 1.75.46 3.46 1.33 4.97L2 22l5.27-1.38a9.9 9.9 0 0 0 4.75 1.21h.01c5.47 0 9.92-4.45 9.92-9.92 0-2.65-1.03-5.14-2.9-6.97Zm-7.03 15.2h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.25 8.25 0 0 1-1.28-4.36c0-4.56 3.71-8.27 8.28-8.27 2.21 0 4.3.86 5.86 2.43a8.24 8.24 0 0 1 2.42 5.85c0 4.56-3.72 8.28-8.3 8.28Zm4.53-6.17c-.25-.12-1.48-.73-1.71-.82-.23-.08-.4-.12-.57.12-.17.25-.65.82-.8 1-.15.16-.29.19-.54.06-.25-.12-1.05-.39-2.01-1.24-.75-.67-1.25-1.49-1.39-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.48c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.31.98 2.47c.13.17 1.68 2.57 4.06 3.61.57.25 1.01.39 1.36.5.57.18 1.09.15 1.5.09.46-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.22-.16-.47-.28Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom-line">
+        <p class="footer-copy">&copy; 2026 Gold Barber Shop</p>
+        <a class="footer-credit" href="https://www.etzahweb.com" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="footerCreditPrefix">Creato per:</span> <span>EtzahWeb</span>
+        </a>
+        <div class="footer-legal-links">
+          <a href="privacy.html" data-i18n="legalPrivacy">Privacy</a>
+          <a href="termini.html" data-i18n="legalTerms">Termini</a>
+          <a href="cookies.html" data-i18n="legalCookies">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/41763931583"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-i18n-aria-label="whatsappAria"
+      aria-label="Apri chat WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.52 3.48A11.79 11.79 0 0 0 12.12 0C5.6 0 .31 5.29.31 11.81c0 2.08.54 4.1 1.56 5.89L0 24l6.51-1.71a11.77 11.77 0 0 0 5.63 1.43h.01c6.51 0 11.8-5.29 11.8-11.81 0-3.15-1.23-6.11-3.43-8.43Zm-8.38 18.25h-.01a9.84 9.84 0 0 1-5-1.36l-.36-.21-3.86 1.01 1.03-3.76-.24-.38a9.88 9.88 0 0 1-1.52-5.22c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.98 2.91a9.82 9.82 0 0 1 2.89 6.97c0 5.45-4.44 9.89-9.9 9.89Zm5.42-7.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.03-.45.13-.6.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.52-.08-.15-.68-1.65-.94-2.26-.25-.6-.5-.52-.68-.53l-.58-.01c-.2 0-.5.08-.76.38-.26.3-1 1-1 2.4 0 1.4 1.02 2.76 1.16 2.95.15.2 1.98 3.03 4.78 4.26.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.77-.72 2.02-1.42.25-.7.25-1.28.18-1.42-.08-.12-.27-.2-.57-.35Z" />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

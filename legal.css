@@ -80,8 +80,8 @@ a {
 }
 
 .legal-brand strong,
-.legal-hero h1,
-.legal-section h2 {
+.legal-panel h1,
+.legal-copy h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -144,50 +144,68 @@ a {
   padding: 34px 0 70px;
 }
 
-.legal-hero,
-.legal-section {
+.legal-panel {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
   border: 1px solid var(--line);
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
 
-.legal-hero {
+.legal-panel {
   padding: 34px;
-  margin-bottom: 24px;
 }
 
-.legal-hero h1 {
+.legal-panel-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.legal-panel h1 {
   margin: 0 0 12px;
-  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-size: clamp(2.2rem, 5.2vw, 3.9rem);
   line-height: 0.95;
 }
 
-.legal-hero p,
-.legal-section p,
-.legal-section li {
+.legal-intro {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.legal-copy {
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(201, 160, 74, 0.16);
+}
+
+.legal-copy h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.legal-copy p,
+.legal-copy li {
   color: var(--text-soft);
   line-height: 1.8;
 }
 
-.legal-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+.legal-copy > * + * {
+  margin-top: 16px;
 }
 
-.legal-section {
-  padding: 26px;
-}
-
-.legal-section h2 {
-  margin: 0 0 14px;
-  font-size: 2rem;
-}
-
-.legal-section ul {
+.legal-copy ul {
   margin: 0;
-  padding-left: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.legal-copy li + li {
+  margin-top: 12px;
+}
+
+.legal-copy li {
+  padding: 0;
 }
 
 .legal-footer {
@@ -274,10 +292,6 @@ body.legal-lang-en .lang-it {
 }
 
 @media (max-width: 760px) {
-  .legal-grid {
-    grid-template-columns: 1fr;
-  }
-
   .legal-nav {
     flex-direction: column;
     align-items: stretch;
@@ -304,9 +318,13 @@ body.legal-lang-en .lang-it {
     flex: 1 1 0;
   }
 
-  .legal-hero,
-  .legal-section {
+  .legal-panel {
     padding: 22px;
+  }
+
+  .legal-copy {
+    margin-top: 26px;
+    padding-top: 22px;
   }
 }
 

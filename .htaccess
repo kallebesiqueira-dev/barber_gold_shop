@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Force the canonical host used by the site's SEO metadata.
+RewriteCond %{HTTP_HOST} !^www\.barbershopgold\.com$ [NC,OR]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://www.barbershopgold.com%{REQUEST_URI} [L,R=301]

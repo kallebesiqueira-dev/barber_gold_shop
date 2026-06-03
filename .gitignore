@@ -1,1 +1,5 @@
 .vercel
+
+# Pacotes/arquivos locais (nao vao pro site nem pro repo)
+*.zip
+.vscode/

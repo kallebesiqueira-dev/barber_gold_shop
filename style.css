@@ -1343,10 +1343,26 @@ select {
     font-size: clamp(3.3rem, 18vw, 5.2rem);
   }
 
+  /* Espaco fica em cima: hero cheio e botao colado na base */
+  .hero {
+    min-height: 100svh;
+    padding-top: calc(var(--header-height) + 40px);
+    padding-bottom: 0;
+  }
+
   .hero-content {
-    min-height: calc(100svh - var(--header-height) - 132px);
+    min-height: 0;
     align-items: end;
-    padding-bottom: 18px;
+    padding-bottom: 30px;
+  }
+
+  /* Cola a secao seguinte no hero com uma sombra suave de uniao */
+  .about-section {
+    position: relative;
+    z-index: 1;
+    padding-top: 0;
+    margin-top: -1px;
+    box-shadow: 0 -24px 40px -16px rgba(0, 0, 0, 0.55);
   }
 
   .hero-media {
@@ -1358,17 +1374,23 @@ select {
   }
 
   .hero-floating-actions {
-    width: min(340px, 100%);
+    width: auto;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 14px;
     margin-inline: auto;
   }
 
+  /* So o CTA "Prenota ora" no mobile */
+  .hero-floating-actions .hero-float-secondary {
+    display: none;
+  }
+
   .hero-floating-actions .btn {
-    min-height: 48px;
-    padding: 0 18px;
-    font-size: 0.94rem;
+    min-height: 46px;
+    padding: 0 30px;
+    width: auto;
+    font-size: 0.92rem;
   }
 
   .section {
@@ -1462,11 +1484,11 @@ select {
   }
 
   .hero-content {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
   }
 
   .hero-floating-actions {
-    width: min(312px, 100%);
+    width: auto;
     gap: 12px;
   }
 
@@ -1476,9 +1498,10 @@ select {
   }
 
   .hero-floating-actions .btn {
-    min-height: 46px;
-    padding: 0 16px;
-    font-size: 0.91rem;
+    min-height: 44px;
+    padding: 0 28px;
+    width: auto;
+    font-size: 0.9rem;
   }
 
   body.has-cookie-banner {
